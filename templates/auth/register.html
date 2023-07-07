@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/light.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <title>Register</title>
+</head>
+<body>
+    <main class="width height">
+        <flex-tag row height="100%">
+            <div style="overflow: hidden;" class="width height">
+                <img style="width: 100%; height: 100%;" src="{{url_for('static', filename='images/register.jpeg')}}" alt="">
+            </div>
+            <flex-tag padding="1rem" height="100%">
+                <div class="flex-row space-evenly align-center">
+                    <h1>Register Page</h1>
+                    <h2><a href="/">Home Page</a></h2>
+                </div>
+                <form id="register-form" action="./register" method="post">
+                    <input-tag label="First Name" name="firstname" type="text"></input-tag>
+                    <input-tag label="Email" name="email" type="email"></input-tag>
+                    <input-tag label="Password" name="password" type="password"></input-tag>
+                    <input-tag label="isadmin" name="isAdmin" type="checkbox" hidden></input-tag>
+                    <input-tag label="Verified" name="verified" type="checkbox" hidden></input-tag>
+                    <button id="register-btn" type="button">Register</button>
+                    <p>Have an account <a href="/login-page"><b>Log in</b></a></p>
+                </form>
+            </flex-tag>
+        </flex-tag>
+    </main>
+</body>
+<script type="module" src="{{url_for('static', filename='js/components/components.js')}}"></script>
+<script>
+    const validateEmail = (email) =>{
+        var emailRegex = /^\S+@\S+\.\S+$/;
+        return emailRegex.test(email);
+    }
+
+    const xml_req = (method,url,body) =>{
+        const xhr = new XMLHttpRequest()
+        try {
+            xhr.open(method.toUpperCase(),url,false)
+            xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+            xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type');
+            body?xhr.send(body):xhr.send()
+        } catch (error) {
+            console.log(error);
+        }
+        return xhr
+    }
+
+    const get_current_dateTime = () =>{
+        let date = new Date()
+        return  `${date.getFullYear()}-${date.getDate()}-${date.getMonth()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+    }
+
+    const registerBtn = document.querySelector("#register-btn")
+    const registerForm = document.querySelector("#register-form")
+    
+    registerBtn.onclick = (e) =>{
+        const firstNameInput = registerForm.elements['firstname'];
+        const emailInput = registerForm.elements['email'];
+        const passwordInput = registerForm.elements['password'];
+        
+        if (firstNameInput.value.trim() === '') {
+            alert('Please enter a First Name');
+            firstNameInput.focus();
+            return;
+        }
+
+        const email = emailInput.value.trim();
+        if (email === '') {
+            alert('Please enter Email');
+            emailInput.focus();
+            return;
+        }
+        if (!validateEmail(email)) {
+            alert('Please enter a valid Email');
+            emailInput.focus();
+            return;
+        }
+
+        const password = passwordInput.value.trim();
+        if (password === '') {
+            alert('Password field can not be empty');
+            passwordInput.focus();
+            return;
+        }
+        if (password.length < 6) {
+            alert('Password should be at least 6 characters long');
+            passwordInput.focus();
+            return;
+        }
+
+        const formData = new FormData(registerForm);
+        const jsonData = {};
+
+        for (let [key, value] of formData.entries()) {
+            jsonData[key] = value;
+        }
+        
+        jsonData["created_at"] = get_current_dateTime()
+        jsonData["isadmin"] = false
+        jsonData["verified"] = true
+        jsonData["disabled"] = false
+
+        const jsonString = JSON.stringify(jsonData);
+        let res = xml_req("POST",registerForm.attributes["action"].value,jsonString)
+        res = JSON.parse(res.responseText)
+
+        if (res["mode"]) {
+            alert("Account successfully registered")
+            const link = document.createElement('a')
+            link.setAttribute("href",res["redirect"])
+            link.click()
+        }else{
+            alert(`Failed to register account with firstname: ${firstNameInput.value} and email ${emailInput.value}`)
+        }
+    }
+</script>
+</html>

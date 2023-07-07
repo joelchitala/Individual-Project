@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/light.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <title>Login</title>
+</head>
+<body>
+    <main class="width height" style="overflow: hidden;">
+        <flex-tag row height="100%">
+            <div style="overflow: hidden;" class="width">
+                <img style="width: 100%; height: 100%;" src="{{url_for('static', filename='images/login_bg_2.jpeg')}}" alt="">
+            </div>
+            <flex-tag padding="1rem" height="100%">
+                <div class="flex-row space-evenly align-center">
+                    <h1>Login Page</h1>
+                    <h2><a href="/">Home Page</a></h2>
+                </div>
+                <form id="login-form" action="./login" method="post">
+                    <input-tag label="Email" name="email" type="email"></input-tag>
+                    <input-tag label="Password" name="password" type="password"></input-tag>
+                    <button id="login-btn" type="button">Login</button>
+
+                    <p>Don't have an account <a href="/register-page"><b>Register</b></a></p>
+                </form>
+
+                
+                
+            </flex-tag>
+        </flex-tag>
+        
+    </main>
+</body>
+<script type="module" src="{{url_for('static', filename='js/components/components.js')}}"></script>
+<script type="module">
+
+    const validateEmail = (email) =>{
+        var emailRegex = /^\S+@\S+\.\S+$/;
+        return emailRegex.test(email);
+    }
+
+    const xml_req = (method,url,body) =>{
+        const xhr = new XMLHttpRequest()
+        try {
+            xhr.open(method.toUpperCase(),url,false)
+            xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+            xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type');
+            body?xhr.send(body):xhr.send()
+        } catch (error) {
+            console.log(error);
+        }
+        return xhr
+    }
+
+    const loginBtn = document.querySelector("#login-btn")
+    const loginForm = document.querySelector("#login-form")
+    
+    loginBtn.onclick = (e) =>{
+        const emailInput = loginForm.elements['email'];
+
+        const email = emailInput.value.trim();
+        if (email === '') {
+            alert('Please enter an Email');
+            emailInput.focus();
+            return;
+        }
+        if (!validateEmail(email)) {
+            alert('Please enter a valid Email');
+            emailInput.focus();
+            return;
+        }
+
+        var formData = new FormData(loginForm);
+        const jsonData = {};
+
+        for (let [key, value] of formData.entries()) {
+            jsonData[key] = value;
+        }
+        
+        const jsonString = JSON.stringify(jsonData);
+        let res = xml_req("POST",loginForm.attributes["action"].value,jsonString)
+        res = JSON.parse(res.responseText)
+
+        if (res["mode"]) {
+            const link = document.createElement('a')
+            link.setAttribute("href",res["redirect"])
+            link.click()
+        }else{
+            alert("Invalid credentials")
+        }
+    }
+
+</script>
+</html>

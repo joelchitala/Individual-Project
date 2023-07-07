@@ -1,0 +1,50 @@
+{
+    "intents": [
+      {
+        "intent": "greeting",
+        "inputs": ["Hello", "Hi", "Hey"],
+        "responses": ["Hello! How can I assist you today?", "Hi there! How may I help you?", "Hey! What can I do for you?"]
+      },
+      {
+        "intent": "available_rooms",
+        "inputs": ["What rooms do you have available?", "Are there any vacant rooms?", "Tell me about your available accommodations."],
+        "responses": ["We have a variety of rooms available, including single rooms, double rooms, and studio apartments. Would you like more information about any specific type?"]
+      },
+      {
+        "intent": "room_details",
+        "inputs": ["Tell me about single rooms.", "What are the features of double rooms?", "Describe the studio apartments."],
+        "responses": ["Single rooms are cozy and perfect for individual students. They come with a bed, desk, chair, and storage space.", "Double rooms are spacious and designed for two students. They include two beds, two desks, chairs, and ample storage.", "Studio apartments are fully furnished with a bedroom, kitchenette, bathroom, and study area. They offer privacy and independence for students."]
+      },
+      {
+        "intent": "pricing",
+        "inputs": ["How much does a single room cost?", "What is the price of a double room?", "What are the rates for studio apartments?"],
+        "responses": ["The price of a single room is $X per month.", "A double room costs $Y per month.", "Studio apartments are priced at $Z per month."]
+      },
+      {
+        "intent": "amenities",
+        "inputs": ["What amenities do you offer?", "Tell me about the facilities available.", "What are the included amenities?"],
+        "responses": ["Our accommodations include high-speed internet, laundry facilities, a communal kitchen, and a study area. We also have a gym and a common room where students can relax and socialize."]
+      },
+      {
+        "intent": "booking_process",
+        "inputs": ["How can I book a room?", "What is the process to reserve accommodation?", "Tell me how to secure a room."],
+        "responses": ["To book a room, please visit our website and fill out the booking form. Our team will review your application and contact you with further instructions."]
+      },
+      {
+        "intent": "check_in",
+        "inputs": ["How does the check-in process work?", "What do I need for check-in?", "Tell me about the check-in procedure."],
+        "responses": ["Once your booking is confirmed, we will provide you with check-in details. You'll need to bring a valid ID, proof of enrollment, and the first month's rent. Our staff will assist you with the check-in process and show you to your room."]
+      },
+      {
+        "intent": "additional_info",
+        "inputs": ["Do you provide bedding and towels?", "Are pets allowed?", "Can I have guests over?"],
+        "responses": ["Yes, we provide bedding and towels for all our residents.", "Unfortunately, we do not allow pets in our accommodations.", "Guests are allowed, but they must sign in at the reception and follow our guest policy."]
+      },
+      {
+        "intent": "goodbye",
+        "inputs": ["Thank you for your help. Goodbye!", "That's all I needed. Goodbye!", "I appreciate your assistance. Goodbye!", "Goodbye"],
+        "responses": ["You're welcome! If you have any more questions in the future, feel free to ask. Goodbye and have a great day!", "No problem! Don't hesitate to reach out if you need any further information. Goodbye!", "I'm glad I could assist you. If you need anything else, don't hesitate to ask. Goodbye!"]
+      }
+    ]
+  }
+  

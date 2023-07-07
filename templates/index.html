@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/light.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <title>Home Page</title>
+</head>
+<body>
+    <header class="flex-row align-center space-evenly">
+        <div>
+            <h1>Chattie</h1>
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-links flex-row align-center space-evenly">
+                    
+                    {% if session %}
+                        {% if session.isAdmin == 'True' %}
+                            <li><a href="./admin-dashboard">Dashboard</a></li>
+                        {% else %}
+                            <li><a href="./user-dashboard">Dashboard</a></li>
+                        {% endif %}
+                        <li><a href="/logout">Logout</a></li>
+                    {% else %}
+                        <li><a href="./login-page">Login</a></li>
+                        <li><a href="./register-page">Register</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+        
+      </header>
+      
+      <main style="padding: 1rem;">
+        <section>
+            <h2>Welcome to Chattie</h2>
+            <h3 style="text-align: center;">Build, Deploy, and Enhance Intelligent Chatbots</h3>
+        </section>
+        <section class="flex-col align-center space-evenly">
+            <div class="showcase" id="features">
+                <figure>
+                    <img src="{{url_for('static', filename='images/ai_chatbot_robot_behind_a_desk.jpg')}}" alt="">
+                </figure>
+                <div>
+                    <h4>Build Intelligent Chatbots with Ease</h4>
+                    <p>With Chattie, you don't need to be a coding expert or 
+                        have prior AI knowledge to create powerful chatbots. 
+                        Our intuitive visual interface allows you to design chatbot 
+                        conversations effortlessly. Simply drag and drop conversation blocks, 
+                        define user responses, and customize bot behavior to meet your unique 
+                        requirements. Build chatbots that understand your customers and provide instant, 
+                        accurate responses round the clock.</p>
+                </div>
+            </div>
+            
+            <div class="showcase" id="deployment">
+                <figure>
+                    <img src="{{url_for('static', filename='images/deployment.jpg')}}" alt="">
+                </figure>
+                <div>
+                    <h4>Seamless Deployment Across Multiple Channels</h4>
+                    <p>Take your chatbots to where your customers are. Chattie supports seamless integration across various messaging platforms, including websites, mobile apps, social media, and more. Engage with your customers on their preferred channels, providing personalized support and information instantly. Connect with your audience wherever they are, delivering a truly omnichannel experience.</p>
+                </div>
+            
+            </div>
+            
+            <div class="showcase" id="power-ai">
+                <figure>
+                    <img src="{{url_for('static', filename='images/artificial_intelligence.jpg')}}" alt="">
+                </figure>
+                <div>
+                    <h4>Unlock the Power of Artificial Intelligence</h4>
+                    <p>Leverage the latest advancements in natural language processing and machine learning to create intelligent chatbots that can understand context, sentiment, and intent. With Chattie, you can train your chatbots to handle complex conversations, provide accurate recommendations, and deliver personalized experiences. Harness the power of AI to streamline your operations and provide unparalleled customer service.</p>
+                </div>
+            </div>
+            
+            <div class="showcase" id="analytics">
+                <figure>
+                    <img src="{{url_for('static', filename='images/Data-Analytics-Benefits.png')}}" alt="">
+                </figure>
+                <div>
+                    <h4>Smart Analytics and Insights</h4>
+                    <p>Gain valuable insights into your chatbot's performance with our comprehensive analytics dashboard. Track key metrics, measure engagement, monitor user satisfaction, and identify areas for improvement. Our advanced analytics capabilities enable you to optimize your chatbots continuously, ensuring they evolve and meet your business goals effectively.</p>
+                </div>
+            </div>
+            
+            <div class="showcase" id="support">
+                <figure>
+                    <img style="width: 540px; height: 540px;" 
+                    src="{{url_for('static', filename='images/support_and_assistance.jpeg')}}" alt="">
+                </figure>
+                <div>
+                    <h4>24/7 Support and Assistance</h4>
+                    <p>We understand the importance of reliable support when it comes to AI chatbots. Our dedicated team of experts is available round the clock to assist you with any queries, concerns, or technical issues. From initial setup to ongoing maintenance, we're here to ensure your chatbot journey is smooth and successful.</p>
+                </div>
+            </div>
+            
+            <div class="showcase" id="get-started">
+                <figure>
+                    <img style="width: 540px;" 
+                    src="{{url_for('static', filename='images/are_you_ready.jpeg')}}" alt="">
+                </figure>
+                <div>
+                    <h4>Get Started with Chattie Today</h4>
+                    <p>Ready to transform your customer experience and take your business to new heights? 
+                        <b><a href="./register-page">Sign up Today</a></b> and unlock the power of AI-driven conversations. Our user-friendly platform, extensive features, and exceptional support make ChatBotX the preferred choice for businesses of all sizes. Start building your intelligent chatbots now and stay ahead of the competition!</p>
+                </div>
+            </div>
+            
+        </section>
+      </main>
+</body>
+
+</html>

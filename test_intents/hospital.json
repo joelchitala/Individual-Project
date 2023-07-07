@@ -1,0 +1,93 @@
+{
+    "intents": [
+        {
+            "intent": "greet",
+            "inputs": [
+                "Hello",
+                "Hi",
+                "Good morning",
+                "Good afternoon",
+                "Greetings"
+            ],
+            "responses": [
+                "Hello! Welcome to our hospital. How may I assist you today?",
+                "Hi there! How can I help you today?",
+                "Good morning! How can we be of service to you?",
+                "Good afternoon! How may I assist you during your visit to our hospital?",
+                "Greetings! We're here to provide you with the best care possible. How can I assist you?"
+            ]
+        },
+        {
+            "intent": "appointment",
+            "inputs": [
+                "I'd like to book an appointment",
+                "Can I schedule a visit?",
+                "Appointment for [date]",
+                "I need to see a doctor",
+                "How can I schedule a consultation?"
+            ],
+            "responses": [
+                "Certainly! To book an appointment, I will need your full name, preferred date and time, and the reason for your visit. Please provide me with these details so that I can assist you further.",
+                "Of course! To help you with scheduling an appointment, could you please provide me with your full name, preferred date and time, and the reason for your visit? We'll do our best to accommodate you.",
+                "Thank you for choosing our hospital. To schedule an appointment, please provide us with your full name, the date and time that works best for you, and the reason for your visit. We'll ensure you receive the necessary care.",
+                "To book an appointment, we need some information from you. Please provide your full name, preferred date and time, as well as the reason for your visit. Our staff will assist you in securing an appointment with the appropriate healthcare professional.",
+                "Certainly! We're here to help you schedule a consultation. Could you please provide us with your full name, the date and time that suit your schedule, and a brief description of the reason for your visit? We'll take care of the rest."
+            ]
+        },
+        {
+            "intent": "medical_information",
+            "inputs": [
+                "Can you provide me with medical information?",
+                "I need information about a specific condition",
+                "What are the symptoms of [condition]?",
+                "Tell me about [treatment/procedure]",
+                "Do you have any resources on healthcare?"
+            ],
+            "responses": [
+                "Certainly! We can provide you with general medical information. However, for personalized advice, it's best to consult with a healthcare professional. How can I assist you specifically?",
+                "We can offer general medical information on various conditions and treatments. However, it's essential to consult with a healthcare provider for accurate diagnosis and personalized advice. How can I help you with specific information?",
+                "We strive to provide reliable medical information. However, it's important to consult with a healthcare professional for accurate diagnosis and guidance. If you have specific questions or concerns, please let us know, and we'll assist you to the best of our knowledge.",
+                "As a hospital, we have access to extensive medical resources. While we can provide general information, it's always recommended to consult with a healthcare professional for personalized advice. If you have any specific questions or topics you'd like to know more about, please let us know.",
+                "We understand the importance of accurate medical information. While we can offer general knowledge, it's crucial to consult with a healthcare professional for personalized advice. If you have any specific questions or concerns, feel free to ask, and we'll do our best to provide helpful information."
+            ]
+        },
+        {
+            "intent": "visiting_hours",
+            "inputs": [
+                "What are your visiting hours?",
+                "When can I visit?",
+                "Are you open on weekends?",
+                "Tell me your hospital hours",
+                "What time can I come in?",
+                "Are you closed on public holidays?"
+            ],
+            "responses": [
+                "Our visiting hours are from [start time] to [end time] from Monday to Friday, and from [start time] to [end time] on weekends. However, please note that specific units or departments may have their visiting hours. We strive to provide a comfortable and safe environment for patients and visitors alike.",
+                "We have designated visiting hours to ensure the well-being of our patients. From Monday to Friday, visiting hours are from [start time] to [end time], and on weekends, they are from [start time] to [end time]. Please check with the specific department or unit you plan to visit for any additional guidelines or restrictions.",
+                "We welcome visitors during our visiting hours. On weekdays, visiting hours are from [start time] to [end time], and on weekends, they are from [start time] to [end time]. To ensure the comfort and privacy of our patients, please adhere to the guidelines provided by our staff and check with the specific department you intend to visit for any additional instructions.",
+                "We understand the importance of family and friends during a patient's stay. Our visiting hours are from [start time] to [end time] on weekdays, and from [start time] to [end time] on weekends. Please keep in mind that patient care is our priority, so certain units or departments may have specific visiting hour restrictions.",
+                "To accommodate visitors, our hospital has established visiting hours. Monday to Friday, visiting hours are from [start time] to [end time], and on weekends, they are from [start time] to [end time]. However, it's recommended to check with the specific department you plan to visit, as they may have additional guidelines or restrictions in place."
+            ]
+        },
+        {
+            "intent": "thank",
+            "inputs": [
+                "Thank you",
+                "Thanks for your help",
+                "Appreciate it",
+                "You've been helpful",
+                "Great assistance",
+                "Thank you for your excellent service"
+            ],
+            "responses": [
+                "You're welcome! If you have any more questions or need further assistance, feel free to ask. We wish you a smooth and comfortable experience at our hospital.",
+                "You're welcome! It was my pleasure to assist you. If there's anything else you need, please don't hesitate to ask. We hope you have a positive experience at our hospital.",
+                "You're welcome! I'm glad I could help. If there's anything else you'd like to know or if you need any more assistance, please feel free to ask. We're here to support you during your time at our hospital.",
+                "You're most welcome! Providing excellent service and care is our top priority. If there's anything else we can do to assist you or make your experience better, please don't hesitate to reach out. We hope you have a speedy recovery.",
+                "Thank you for your kind words! We strive to provide exceptional service and care to all our patients. If there's anything else we can assist you with, please don't hesitate to let us know. We wish you a quick recovery.",
+                "You're welcome! We're here to support you and provide the best care possible. If there's anything else we can do for you or if you have any further questions, please feel free to ask. We hope you have a positive experience at our hospital."
+            ]
+        }
+    ]
+    
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/light.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <main class="flex-row">
+        <sidebar-tag class="flex-col" image="./images/woman.jpg" 
+        options=[{"profile":0},{"users":1},{"chatbots":2}]></sidebar-tag>
+        <content-tag class="flex-row"></content-tag>
+    </main>
+</body>
+<script type="module" src="{{url_for('static', filename='js/components/components.js')}}"></script>
+<script type="module" src="{{url_for('static', filename='js/pages/admin/index.js')}}"></script>
+</html>

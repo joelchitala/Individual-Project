@@ -1,0 +1,148 @@
+{
+    "intents": [
+      {
+        "intent": "greeting",
+        "inputs": [
+          "hello",
+          "hi",
+          "hey",
+          "welcome",
+          "greetings",
+          "hey there",
+          "hi there",
+          "hello there",
+          "anyone there?",
+          "knock knock"
+        ],
+        "responses": [
+          "Welcome to our fitness courses Instagram page!",
+          "Hi there! How can we assist you with our fitness courses?",
+          "Hello! We're excited to have you here. How can we help you?",
+          "Hey! Thanks for stopping by our fitness courses Instagram page.",
+          "Hi, welcome! Feel free to explore our fitness courses and let us know if you have any questions."
+        ]
+      },
+      {
+        "intent": "course_details",
+        "inputs": [
+          "tell me about your courses",
+          "what courses do you offer",
+          "course information",
+          "available courses",
+          "course options",
+          "course list",
+          "fitness course details",
+          "course curriculum",
+          "course descriptions"
+        ],
+        "responses": [
+          "We offer a variety of fitness courses to cater to different needs and goals. Our courses include strength training, cardio workouts, yoga, and nutrition guidance.",
+          "Our courses are designed by experienced fitness professionals to provide comprehensive training in various areas like strength, endurance, flexibility, and more.",
+          "Explore our fitness courses designed to help you achieve your health and fitness goals. From high-intensity workouts to mindful practices, we have something for everyone.",
+          "Our fitness courses are carefully crafted to provide you with a well-rounded training experience. You can choose from courses focusing on specific areas or opt for a holistic approach."
+        ]
+      },
+      {
+        "intent": "pricing",
+        "inputs": [
+          "how much do your courses cost",
+          "course pricing",
+          "fees",
+          "pricing details",
+          "cost of courses",
+          "affordable courses",
+          "discounts available",
+          "course costs",
+          "price range"
+        ],
+        "responses": [
+          "Our courses are competitively priced to provide you with value for your investment in your health and fitness. For detailed pricing information, please contact us or visit our website.",
+          "We offer different pricing options based on the course duration and level of personalization. Reach out to us for more information on pricing and any available discounts.",
+          "Investing in your fitness is an investment in yourself. Our courses are priced to ensure you receive quality training and guidance to achieve your fitness goals.",
+          "We understand the importance of affordability. Our courses are designed to provide high-quality training at reasonable prices, making fitness accessible to all."
+        ]
+      },
+      {
+        "intent": "enrollment",
+        "inputs": [
+          "how can I enroll",
+          "sign up for courses",
+          "registration process",
+          "join courses",
+          "get started",
+          "how to get enrolled",
+          "course enrollment",
+          "enrollment steps",
+          "course registration"
+        ],
+        "responses": [
+          "Enrolling in our fitness courses is easy! Simply visit our website and follow the instructions to sign up for your desired course.",
+          "To get enrolled in our courses, visit our website and navigate to the enrollment section. There you will find step-by-step instructions to guide you through the process.",
+          "Ready to join our fitness courses? Visit our website and fill out the enrollment form to get started on your fitness journey.",
+          "Enrollment is just a few clicks away! Head over to our website, explore our course options, and complete the registration process to secure your spot."
+        ]
+      },
+      {
+        "intent": "schedule",
+        "inputs": [
+          "course schedule",
+          "class timings",
+          "live or pre-recorded",
+          "flexible schedule",
+          "availability of classes",
+          "timing options",
+          "class hours",
+          "course timing",
+          "scheduling flexibility"
+        ],
+        "responses": [
+          "Our courses have flexible schedules, including both live and pre-recorded sessions. You can choose the option that suits your availability and preferences.",
+          "We understand the importance of a flexible schedule. Our courses offer a mix of live and pre-recorded classes, allowing you to fit them into your routine conveniently.",
+          "With our flexible course schedule, you can join live sessions or access pre-recorded classes at your convenience. We want to make sure you can prioritize your fitness journey.",
+          "Whether you prefer early morning or late evening workouts, our courses offer flexible timing options to accommodate different schedules and time zones."
+        ]
+      },
+      {
+        "intent": "testimonial",
+        "inputs": [
+          "testimonials",
+          "customer reviews",
+          "feedback",
+          "success stories",
+          "results achieved",
+          "client experiences",
+          "what others say",
+          "review",
+          "customer testimonials"
+        ],
+        "responses": [
+          "Don't just take our word for it! Check out the testimonials from our satisfied clients on our website or social media channels.",
+          "Our clients have achieved remarkable results and shared their success stories. Visit our website to read their testimonials and get inspired!",
+          "We're proud of the positive feedback we've received from our clients. Their success stories and experiences can motivate and inspire you on your fitness journey.",
+          "Nothing speaks louder than the success stories of our clients. Read their testimonials and see how our fitness courses have transformed their lives."
+        ]
+      },
+      {
+        "intent": "goodbye",
+        "inputs": [
+          "thank you",
+          "thanks",
+          "goodbye",
+          "bye",
+          "see you later",
+          "take care",
+          "have a great day",
+          "farewell",
+          "until next time"
+        ],
+        "responses": [
+          "You're welcome! If you have any more questions, feel free to reach out. Have a great day!",
+          "Thank you for visiting our fitness courses Instagram page. If you need any further assistance, don't hesitate to contact us. Take care and have a wonderful day!",
+          "Goodbye! We hope to see you again soon. Remember, your fitness goals are within reach!",
+          "Thanks for stopping by! We're here to support you on your fitness journey. Until next time, take care and stay motivated.",
+          "Take care and have a fantastic day ahead! Remember, investing in your health and fitness is always worth it."
+        ]
+      }
+    ]
+  }
+  

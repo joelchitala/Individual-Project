@@ -1,0 +1,91 @@
+{
+    "intents": [
+        {
+            "intent": "greet",
+            "inputs": [
+                "Hello",
+                "Hi",
+                "Good morning",
+                "Good afternoon",
+                "Greetings"
+            ],
+            "responses": [
+                "Hello! Welcome to our 5-star hotel. How can I assist you today?",
+                "Hi there! How can I help you today?",
+                "Good morning! How may I assist you?",
+                "Good afternoon! How can I help you?",
+                "Greetings! We're here to provide you with a luxurious experience. How can I assist you?"
+            ]
+        },
+        {
+            "intent": "room_booking",
+            "inputs": [
+                "I want to book a room",
+                "How can I make a reservation?",
+                "Room availability",
+                "What are your room rates?",
+                "Can you help me with room booking?"
+            ],
+            "responses": [
+                "We would be delighted to assist you in booking a room. To make a reservation, you can visit our website or contact our reservations department directly. Our staff will provide you with all the necessary information regarding room availability and rates.",
+                "Booking a room at our 5-star hotel is a breeze. You can make a reservation by visiting our website or reaching out to our reservations team. They will guide you through the process and inform you about the room availability and rates for your desired dates.",
+                "Thank you for considering our hotel for your stay. To book a room, please visit our website or contact our reservations department. They will assist you in checking room availability and provide you with the best rates for your preferred dates.",
+                "We're excited to accommodate you in our luxurious hotel. To make a room reservation, you can either visit our website and follow the online booking process or get in touch with our reservations team. They will ensure you have all the details about room availability and rates.",
+                "Certainly! We're here to help you with your room booking. You can make a reservation by visiting our website or contacting our reservations department. They will guide you through the process and provide you with information about room availability and rates."
+            ]
+        },
+        {
+            "intent": "amenities",
+            "inputs": [
+                "What amenities do you offer?",
+                "Tell me about your facilities",
+                "Do you have a pool?",
+                "What are the dining options?",
+                "Can you provide information about your spa?"
+            ],
+            "responses": [
+                "Our 5-star hotel offers a range of exceptional amenities and facilities. These include a swimming pool, fitness center, spa, restaurants, bars, concierge services, and more. We strive to provide a luxurious and memorable experience for our guests.",
+                "We take pride in providing outstanding amenities and facilities for our guests. Our hotel features a beautiful swimming pool, well-equipped fitness center, luxurious spa, fine dining restaurants, stylish bars, 24-hour concierge services, and much more. Your comfort and satisfaction are our top priorities.",
+                "We have a variety of impressive amenities available at our 5-star hotel. These include a stunning swimming pool overlooking the coast, a state-of-the-art fitness center, a world-class spa offering rejuvenating treatments, exquisite dining options serving international cuisines, and attentive concierge services to cater to your needs.",
+                "At our hotel, we offer a wide range of amenities to enhance your stay. You can enjoy our luxurious swimming pool, fully-equipped fitness center, rejuvenating spa treatments, exquisite dining options showcasing global cuisines, and personalized concierge services to assist you with any requests.",
+                "Our hotel boasts an array of top-notch amenities and facilities. You can indulge in our refreshing swimming pool, maintain your fitness routine at our modern fitness center, pamper yourself with spa treatments, savor culinary delights at our dining options, and rely on our dedicated concierge services for a seamless experience."
+            ]
+        },
+        {
+            "intent": "attractions",
+            "inputs": [
+                "What attractions are nearby?",
+                "Can you recommend local attractions?",
+                "Are there any popular tourist spots nearby?",
+                "Tell me about the beach",
+                "What recreational activities are available?"
+            ],
+            "responses": [
+                "Our hotel is located on the beautiful coast of Dubai, offering breathtaking views and direct access to the beach. Nearby attractions include popular tourist spots such as [attraction 1], [attraction 2], and [attraction 3]. You can also engage in various recreational activities like water sports, beach volleyball, and yacht cruises.",
+                "Being situated on the coast of Dubai, our hotel provides easy access to the beach and stunning views of the ocean. There are several attractions nearby, including [attraction 1], [attraction 2], and [attraction 3]. In terms of recreational activities, you can enjoy water sports, beachside relaxation, and leisurely walks along the shoreline.",
+                "The coastal location of our hotel offers proximity to many exciting attractions. You can explore popular tourist spots like [attraction 1], [attraction 2], and [attraction 3] located nearby. The beach is an ideal spot for relaxation and sunbathing, and you can also partake in activities like swimming, jet skiing, and beachside dining.",
+                "You're in luck! Our hotel is situated on the coast of Dubai, providing access to a beautiful beach. Nearby attractions that you might enjoy include [attraction 1], [attraction 2], and [attraction 3]. Additionally, you can engage in various recreational activities such as beach volleyball, snorkeling, and sunset cruises.",
+                "The coastal location of our hotel offers a fantastic beach experience right at your doorstep. Nearby attractions include [attraction 1], [attraction 2], and [attraction 3]. As for recreational activities, you can indulge in water sports, sunbathe on the beach, take leisurely strolls, or simply relax and enjoy the serene coastal atmosphere."
+            ]
+        },
+        {
+            "intent": "thank",
+            "inputs": [
+                "Thank you",
+                "Thanks for your help",
+                "Appreciate it",
+                "You've been helpful",
+                "Great assistance",
+                "Thank you for your guidance"
+            ],
+            "responses": [
+                "You're welcome! If you have any more questions or need further assistance, feel free to ask. We wish you a luxurious and memorable stay at our 5-star hotel!",
+                "You're welcome! It was my pleasure to assist you. If there's anything else you need, please don't hesitate to ask. We're here to ensure you have a delightful experience at our hotel.",
+                "You're welcome! I'm glad I could help. If there's anything else you'd like to know or if you need any more assistance, please feel free to ask. We're committed to making your stay at our 5-star hotel exceptional.",
+                "You're most welcome! Providing excellent service and support to our guests is our utmost priority. If there's anything else we can do to assist you or if you have any further questions, please don't hesitate to reach out. We hope you have a memorable time at our hotel.",
+                "Thank you for your kind words! We strive to provide exceptional assistance and ensure our guests have an unforgettable experience. If there's anything else we can assist you with, please don't hesitate to ask. We wish you a luxurious and enjoyable stay at our 5-star hotel."
+            ]
+        }
+    ]
+    
+}

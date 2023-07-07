@@ -1,0 +1,92 @@
+{
+    "intents": [
+        {
+            "intent": "greet",
+            "inputs": [
+                "Hello",
+                "Hi",
+                "Good morning",
+                "Good afternoon",
+                "Greetings"
+            ],
+            "responses": [
+                "Hello! Welcome to our school. How can I assist you today?",
+                "Hi there! How can I help you today?",
+                "Good morning! How may I assist you?",
+                "Good afternoon! How can I help you?",
+                "Greetings! We're here to provide you with information and support. How can I assist you?"
+            ]
+        },
+        {
+            "intent": "admissions",
+            "inputs": [
+                "I'm interested in admissions",
+                "How can I apply to your school?",
+                "Admissions process",
+                "When is the application deadline?",
+                "Is there an admission test?"
+            ],
+            "responses": [
+                "We're thrilled to hear that you're interested in our school! To apply, please visit our website and complete the online application form. The admissions team will review your application and provide you with further instructions.",
+                "We have a straightforward admissions process. To apply to our school, please visit our website and fill out the online application form. The deadline for applications is [deadline date]. If you have any specific questions about the process, please let me know.",
+                "Thank you for considering our school for your education. The admissions process is simple. You can apply by completing the online application form available on our website. The application deadline is [deadline date]. If there's an admission test, the details will be provided after you submit your application.",
+                "To apply to our school, please visit our website and fill out the online application form. The application deadline is [deadline date]. Once you submit your application, the admissions team will contact you with information about any required admission tests or additional steps in the process.",
+                "We welcome your interest in our school! The application process is as follows: visit our website, complete the online application form, and submit it before the deadline on [deadline date]. If there's an admission test, the relevant details will be communicated to you once your application is received."
+            ]
+        },
+        {
+            "intent": "programs",
+            "inputs": [
+                "What programs do you offer?",
+                "Tell me about your curriculum",
+                "What subjects do you teach?",
+                "Do you have extracurricular activities?",
+                "Can you provide information about [program/subject]?"
+            ],
+            "responses": [
+                "We offer a range of programs designed to meet the needs and interests of our students. Our curriculum focuses on a well-rounded education, including subjects such as mathematics, science, language arts, social studies, and more. Additionally, we offer a variety of extracurricular activities to enhance students' learning experiences.",
+                "Our school provides a comprehensive curriculum that covers various subjects, including mathematics, science, language arts, social studies, and more. We believe in offering a well-rounded education that nurtures students' intellectual, social, and emotional growth. Alongside the academic program, we have a diverse range of extracurricular activities for students to explore their interests.",
+                "We take pride in our diverse range of programs and subjects. Our curriculum includes mathematics, science, language arts, social studies, physical education, arts, and more. We also offer a wide selection of extracurricular activities to support students' holistic development.",
+                "At our school, we offer a comprehensive curriculum that encompasses various subjects, such as mathematics, science, language arts, social studies, and more. In addition to the core academic subjects, we provide opportunities for students to engage in extracurricular activities, including sports, arts, music, clubs, and community service.",
+                "Our school offers a variety of programs designed to cater to the diverse interests and needs of our students. Our curriculum includes core subjects like mathematics, science, language arts, social studies, and more. We also provide extracurricular activities such as sports, arts, music, and clubs. If you have specific questions about a particular program or subject, please let me know."
+            ]
+        },
+        {
+            "intent": "schedule",
+            "inputs": [
+                "What are your school hours?",
+                "When does the school day start and end?",
+                "Do you have a lunch break?",
+                "What is the class schedule?",
+                "Are you open on weekends?"
+            ],
+            "responses": [
+                "Our school hours are from [start time] to [end time] on weekdays. The school day typically starts at [start time] and ends at [end time]. We do have designated break times, including a lunch break, to ensure students have time for meals and relaxation.",
+                "Our school day starts at [start time] and ends at [end time] on weekdays. We have scheduled break times, including a lunch break, to ensure students have adequate rest and nourishment. Please note that the specific class schedule may vary depending on the grade level and subject.",
+                "During weekdays, our school operates from [start time] to [end time]. The school day typically begins at [start time] and ends at [end time]. We do provide a lunch break, allowing students to have a meal and engage in social activities. Please consult the specific class schedule for more details.",
+                "The school day at our institution starts at [start time] and concludes at [end time] on weekdays. We have designated time slots for breaks, including a lunch break, to ensure students have opportunities for relaxation and nourishment. Weekends are generally non-operational unless there are specific events or activities.",
+                "On weekdays, our school is open from [start time] to [end time]. The school day begins at [start time] and concludes at [end time]. We have scheduled breaks, including a lunch break, to provide students with necessary downtime and nourishment. Please check the specific class schedule for more detailed information."
+            ]
+        },
+        {
+            "intent": "thank",
+            "inputs": [
+                "Thank you",
+                "Thanks for your help",
+                "Appreciate it",
+                "You've been helpful",
+                "Great assistance",
+                "Thank you for your guidance"
+            ],
+            "responses": [
+                "You're welcome! If you have any more questions or need further assistance, feel free to ask. We wish you a successful educational journey!",
+                "You're welcome! It was my pleasure to assist you. If there's anything else you need, please don't hesitate to ask. We're here to support you in your educational endeavors.",
+                "You're welcome! I'm glad I could help. If there's anything else you'd like to know or if you need any more assistance, please feel free to ask. We're here to ensure you have a positive experience at our school.",
+                "You're most welcome! Providing excellent support to our students and parents is our top priority. If there's anything else we can do to assist you or if you have any further questions, please don't hesitate to reach out. We wish you a successful academic journey.",
+                "Thank you for your kind words! We strive to provide exceptional guidance and support to our students and their families. If there's anything else we can assist you with, please don't hesitate to let us know. We wish you a wonderful experience at our school.",
+                "You're welcome! We're here to support you in your educational pursuits. If there's anything else we can do for you or if you have any further questions, please feel free to ask. We hope you have a rewarding time at our school."
+            ]
+        }
+    ]
+    
+}

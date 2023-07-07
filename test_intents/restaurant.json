@@ -1,0 +1,118 @@
+{
+    "intents": [
+        {
+            "intent": "greet",
+            "inputs": [
+                "Hi",
+                "Hello",
+                "Hey there",
+                "Good morning",
+                "Good afternoon",
+                "Greetings"
+            ],
+            "responses": [
+                "Hello! Welcome to our restaurant. How can I assist you today?",
+                "Hi there! How may I help you today?",
+                "Welcome! We're delighted to have you here. How can we make your experience exceptional?",
+                "Good [morning/afternoon]! Thank you for choosing our restaurant. How can I assist you today?",
+                "Greetings! It's a pleasure to have you join us. How may I be of service to you?"
+            ]
+        },
+        {
+            "intent": "make_reservation",
+            "inputs": [
+                "I'd like to make a reservation",
+                "Can I book a table?",
+                "Reservation for tonight, please",
+                "I want to dine at your restaurant",
+                "Can you help me with a reservation?",
+                "Do you have any available tables?",
+                "What's the process for making a reservation?"
+            ],
+            "responses": [
+                "Sure, we'd be happy to assist you with a reservation. Could you please provide the number of guests and the preferred date and time?",
+                "Certainly! How many guests are you expecting, and when would you like to make the reservation?",
+                "Of course! We're happy to help you secure a table. When do you plan to visit, and for how many people?",
+                "Certainly! To assist you with a reservation, may I know the date, time, and the number of guests?",
+                "Absolutely! We can help you with a reservation. Please let us know the number of people and your preferred date and time, and we'll check our availability.",
+                "Thank you for choosing our restaurant. Making a reservation is easy! Just let us know the date, time, and the number of guests, and we'll take care of the rest."
+            ]
+        },
+        {
+            "intent": "menu_options",
+            "inputs": [
+                "What's on the menu?",
+                "Can you show me the menu?",
+                "Any vegetarian options?",
+                "What dishes do you serve?",
+                "Tell me about your menu",
+                "Do you have a special menu for dietary restrictions?"
+            ],
+            "responses": [
+                "Here's a link to our menu: [insert menu link]. We have a variety of options, including vegetarian dishes. Is there anything specific you would like to know about the menu?",
+                "Our menu offers a wide range of delicious dishes, including vegetarian options. You can find our menu on our website or we can provide you with a printed copy when you visit.",
+                "We take pride in our diverse menu, which includes vegetarian options. From delectable appetizers to mouth-watering main courses and delightful desserts, our menu has something for everyone.",
+                "Our menu is carefully crafted to offer a delightful culinary experience. We have a variety of dishes ranging from seafood and poultry to vegetarian and vegan options. Let us know if you have any specific dietary restrictions, and we'll be happy to assist you with suitable choices.",
+                "At our restaurant, we believe in catering to all tastes and dietary preferences. Our menu includes a wide range of dishes, including vegetarian, vegan, and gluten-free options. You can explore our menu online at [insert website] or ask our staff for recommendations when you visit.",
+                "We understand the importance of catering to different dietary restrictions. Our menu features a variety of dishes, including vegetarian, vegan, and gluten-free options. If you have any specific dietary concerns, our knowledgeable staff will be happy to guide you."
+            ]
+        },
+        {
+            "intent": "specials",
+            "inputs": [
+                "Are there any specials today?",
+                "What are the chef's recommendations?",
+                "Do you have any discounts?",
+                "Tell me about your specials",
+                "Any promotions available?",
+                "What's unique about your menu today?"
+            ],
+            "responses": [
+                "Yes, we have some specials today. Our chef's recommendations are [special dish 1] and [special dish 2]. As for discounts, we currently have a happy hour promotion from 5 PM to 7 PM with 20% off on selected items.",
+                "Our chef has prepared some exquisite specials for today, including [special dish 1] and [special dish 2]. Additionally, we have a happy hour promotion from 5 PM to 7 PM, offering 20% off on selected items.",
+                "Absolutely! Our specials today include [special dish 1] and [special dish 2], which are highly recommended. Don't forget to check out our happy hour promotion from 5 PM to 7 PM for discounted drinks and appetizers.",
+                "Our daily specials feature a variety of mouth-watering dishes created by our talented chefs. Today, we recommend trying [special dish 1], which combines fresh ingredients and bold flavors, as well as [special dish 2], a delightful fusion of textures and tastes.",
+                "When it comes to specials, we have something delightful in store for you today. Our chef's recommendations include [special dish 1] and [special dish 2], both crafted with exquisite ingredients and culinary expertise.",
+                "Experience our chef's creativity with our specials of the day. We have carefully curated dishes that highlight seasonal ingredients and unique flavor combinations. Make sure to ask our servers about today's specials when you visit."
+            ]
+        },
+        {
+            "intent": "opening_hours",
+            "inputs": [
+                "What are your opening hours?",
+                "When do you open and close?",
+                "Are you open on weekends?",
+                "Tell me your business hours",
+                "What time do you start serving food?",
+                "Are you closed on any holidays?"
+            ],
+            "responses": [
+                "We are open from 11 AM to 10 PM from Monday to Friday, and from 12 PM to 11 PM on weekends. We look forward to serving you!",
+                "Our opening hours are from Monday to Friday, 11 AM to 10 PM, and on weekends, we open at 12 PM and close at 11 PM. We can't wait to welcome you!",
+                "You can visit us from Monday to Friday between 11 AM and 10 PM, and on weekends, we're open from 12 PM to 11 PM. We're excited to serve you our delicious dishes!",
+                "We start serving food at 11 AM from Monday to Friday and at 12 PM on weekends. Our closing time is 10 PM from Monday to Friday and 11 PM on weekends. We're here to satisfy your cravings!",
+                "At our restaurant, we understand the importance of convenience. That's why we're open from Monday to Friday, 11 AM to 10 PM, and on weekends, we're open from 12 PM to 11 PM. We remain closed on major holidays, but we're open on most other days to serve you.",
+                "We're open for your dining pleasure from Monday to Friday, 11 AM to 10 PM, and on weekends, we're open from 12 PM to 11 PM. We want to make sure you have ample time to savor our culinary creations!"
+            ]
+        },
+        {
+            "intent": "thank",
+            "inputs": [
+                "Thank you",
+                "Thanks for your help",
+                "Appreciate it",
+                "You've been helpful",
+                "Great assistance",
+                "Thank you for your excellent service"
+            ],
+            "responses": [
+                "You're welcome! If you have any more questions or need further assistance, feel free to ask. Enjoy your dining experience!",
+                "You're welcome! It was my pleasure to assist you. If there's anything else you need, feel free to ask. Have a wonderful time at our restaurant!",
+                "You're welcome! I'm glad I could help. If there's anything else you'd like to know or if you need any more assistance, please don't hesitate to ask. Enjoy your visit!",
+                "You're most welcome! Providing exceptional service is our top priority. If there's anything else we can do to make your experience even better, please don't hesitate to let us know. Enjoy your time with us!",
+                "Thank you for your kind words! It's our pleasure to assist you and ensure your satisfaction. If there's anything else you require, please don't hesitate to reach out. Enjoy your meal!",
+                "You're welcome! We strive to deliver excellent service and create memorable experiences for our guests. If there's anything else we can assist you with, feel free to ask. Enjoy your time at our restaurant!"
+            ]
+        }
+    ]    
+}

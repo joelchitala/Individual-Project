@@ -1,0 +1,411 @@
+*{
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+
+button{
+    padding: 1rem;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: #F61C0E;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+/* Index page */
+
+.nav-links li{
+    margin: 0 0.5rem;
+}
+.showcase{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.showcase:nth-child(2n){
+    flex-direction: row-reverse;
+    background-color: #eee;
+}
+
+.showcase img{
+    max-width: 720px;
+    max-height: 600px;
+    margin: 0 0.5rem;
+}
+/* Dashboard page */
+
+sidebar-tag{
+    width: 35%;
+    min-width: 200px;
+    height: 100%;
+    align-items: center;
+    background-color: var(--sidebar-bg);
+}
+
+sidebar-tag figure{
+    align-items: center;
+}
+
+sidebar-tag img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+sidebar-tag .profile-box{
+    width: 100%;
+    /* height: 30%; */
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+sidebar-tag .options-box{
+    width: 100%;
+    height: 70%;
+    padding: 0.125rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+
+sidebar-tag .options-box .option-box{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+sidebar-tag .options-box .option-box:hover{
+    background: #ddd;
+    color: #f62121;
+}
+
+sidebar-tag .options-box .active-option-box{
+    background: #ddd;
+}
+
+.active-option{
+    background: #ddd;
+    color: #f62121;
+}
+
+content-tag{
+    height: 100%;
+    align-items: center;
+}
+
+content-tag #content-box{
+    height: 100%;
+    align-items: center;
+}
+
+.frame{
+    height: 100%;
+    align-items: center;
+}
+
+.frame .page{
+    height: 100%;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.frame .page .tabs{
+    height: 6%;
+    align-items: center;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 1px solid #21212650;
+}
+
+.frame .page .tabs .tab:nth-child(1){
+    border-radius: 0.25rem 0 0 0;
+}
+
+.active-tab{
+    background-color: #F61C0E;
+    color: white;
+}
+
+.inactive-tab{
+    background-color: #ccc;
+    border-top: 1px solid #2121269a;
+    border-right: 1px solid #2121269a;
+    border-left: 1px solid #2121269a;
+}
+
+.frame .page .tabs .tab{
+    width: 15%;
+    min-width: 75px;
+    height: 100%;
+    padding: 0.25rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.frame .page .tabs .tab p{
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.frame .page .views{
+    height: 100%;
+    align-items: center;
+    
+}
+
+.frame .page .views .view{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.back-btn{
+    padding: 1rem;
+}
+
+.active-back-btn{
+    cursor: pointer;
+}
+
+.active-back-btn:hover{
+    color: salmon;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+}
+
+.input-container{
+    margin: 0.5rem 0;
+}
+form input{
+    padding: 0.75rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+}
+
+form input[type="checkbox"]{
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+form button{
+    width: 50%;
+    align-self: center;
+    
+}
+
+form .btn:hover{
+    background-color: #F61C0E;
+}
+
+.table-row{
+    padding: 1rem;
+    align-items: center;
+}
+.table-row:hover{
+    background-color: #ccc;
+}
+
+
+/* Training */
+
+#train-data-section{
+    width: 100%;
+    border: 1px solid #21213280;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    overflow-x: hidden;
+}
+
+#train-data-section .btn{
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #f3f2f2;
+}
+#train-data-section .btn:hover{
+    color: white;
+    background-color: #F61C0E;
+}
+
+#train-data-div{
+    max-height: 300px;
+    padding: 0.5rem;
+    overflow-y: scroll;
+}
+
+intent-tag{
+    background-color: #fff;
+    margin: 0.25rem 0;
+}
+
+.intent-container{
+    padding: 0.5rem;
+    justify-content: space-evenly;
+    border-radius: 0.25rem;
+    box-shadow: 1px 3px 3px #21213240;
+    overflow-x: hidden;
+}
+
+.intent-header{
+ align-items: center;
+}
+
+.intent-header-btns div{
+    height: 100%;
+    padding: 0 0.25rem;
+    margin: 0 0.125rem;
+    cursor: pointer;
+}
+
+.intent-header-btns div:hover{
+    border-radius: 0.25rem;
+    box-shadow: 1px 3px 3px #21213240;
+    color: #F61C0E;
+}
+
+.intent-header i{
+    font-size: 1.75rem;
+}
+
+.editable{
+    padding: 0.25rem 0.125rem;
+    font-size: 0.9rem;
+    text-align: start;
+    text-overflow: clip;
+    overflow: hidden;
+    border: 1px solid #21213280;
+}
+
+.intent-body{
+    padding: 0.5rem;
+}
+
+.inputs{
+    padding: 0.5rem 0;
+}
+
+.responses{
+    padding: 0.5rem 0;
+}
+
+.bubble{
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 1px 3px 3px #21213240;
+}
+.intent-btn{
+    padding: 0.25rem;
+    
+    cursor: pointer;
+}
+.intent-btn:hover{
+    color: #F61C0E;
+}
+
+.bubble i{
+    font-size: 1.5rem;
+}
+
+.bubble-editable{
+    min-width: 5rem;
+    max-width: 35rem;
+    padding: 0.25rem 0.125rem;
+    font-size: 0.9rem;
+    text-align: start;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+/* chat */
+
+
+#chat-container{
+    width: 75%;
+    padding: 0.75rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    box-shadow: 1px 3px 3px #21213250;
+}
+
+#chat-box{
+    height: 540px;
+    padding: 0.5rem;
+    border: 1px solid  #21213250;
+    overflow-y: scroll;
+}
+
+#chat-btns{
+    margin: 0.5rem 0;
+}
+
+#chat-btns input{
+    padding: 0.5rem 0.25rem;
+    margin: 0 0.5rem;
+    box-shadow: 1px 3px 3px #21213250;
+
+}
+
+
+#send-chat{
+    padding: 0.25rem;
+    cursor: pointer;
+}
+#send-chat i{
+    font-size: 1.5rem;
+}
+
+#send-chat:hover{
+    color: #f00;
+    box-shadow: 1px 3px 3px #21213250;
+}
+
+.convo-bubble{
+    min-width: 10%;
+    max-width: 50%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.user-bubble{
+    align-self: flex-end;
+    color: white;
+    background-color: rgb(29, 236, 108);
+}
+
+.bot-bubble{
+    align-self: flex-start;
+    color: white;
+    background-color: rgb(48, 48, 77);
+}
+
