@@ -10,7 +10,6 @@ class CreateCollection:
             return
         conn = self.connector()
         cursor = conn.cursor()
-        # cursor.execute('PRAGMA foreign_keys = ON')
 
         cursor.execute(f'''
             CREATE TABLE IF NOT EXISTS {self.table_name} (

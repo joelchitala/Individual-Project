@@ -98,7 +98,7 @@ class Bot:
             sentence_words = [self.lemmatizer.lemmatize(word) for word in sentence_words]
             return sentence_words
 
-        def bagw(text):
+        def bag_of_words(text):
             words = clean_sentences(text)
             bag = [0] * len(self.words)
             for w in words:
@@ -108,9 +108,9 @@ class Bot:
             return np.array([bag]).reshape(1,1, len(self.words)) 
 
         def prediction(text):
-            bow = bagw(text)
+            bow = bag_of_words(text)
             res = self.model.predict(bow)[0]
-            ERROR_THRESHOLD = 0.2  # Adjust the confidence threshold as needed
+            ERROR_THRESHOLD = 0.2
             results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
             results.sort(key=lambda x: x[1], reverse=True)
             return_list = []
@@ -171,7 +171,6 @@ def trainBot(filePath:str,contentPath:str,paths:dict):
             for word in words:
                 bag.append(1) if word in word_patterns else bag.append(0)
 
-            # making a copy of the output_empty
             output_row = list(output_empty)
             output_row[classes.index(document[1])] = 1
             training.append([bag, output_row])
@@ -179,11 +178,9 @@ def trainBot(filePath:str,contentPath:str,paths:dict):
         random.shuffle(training)
         training = np.array(training)
 
-        # splitting the data
         train_x = list(training[:, 0])
         train_y = list(training[:, 1])
 
-        # Convert train_x to a numpy array
         train_x = np.array(train_x)
         train_x = train_x.reshape((train_x.shape[0], 1, train_x.shape[1]))
 
